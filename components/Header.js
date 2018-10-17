@@ -20,17 +20,24 @@ const Logo = styled.h1`
     position: relative;
     z-index: 2;
     transform: skew(-7deg);
+    a {
+        padding: 0.5rem 1rem;
+        background: ${props => props.theme.drkBlue};
+        color: ${props => props.theme.green};
+        text-transform: uppercase;
+        text-decoration: none;
+    }
 `;
 
 
 const Header = () => (
     <div>   
         <div className="bar">
-            <h1>
-                <Link>
-                    <a href="">Mod Wrk</a>
+            <Logo>
+                <Link href="/">
+                    <a>Mod Wrk</a>
                 </Link>
-            </h1>
+            </Logo>
             <Nav />
         </div>
         <div className="sub-bar">
