@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Meta from './Meta';
-import styled,{ ThemeProvider, injectGlobal} from 'styled-components';
+// import styled,{ ThemeProvider, injectGlobal} from 'styled-components';
 
-const theme = {
-    black: '#29323F',
-    
-}
+// const theme = {
+//     black: '#29323F',
+     
+// }
 
 const StyledPage = styled.div`
     background: white;
@@ -23,13 +23,15 @@ const Inner = styled.div`
 class Page extends Component {
     render() {
         return (
-            <StyledPage>
-                <Inner>
-                    <Meta />
-                    <Header />
-                    {this.props.children}
-                </Inner>
-            </StyledPage>
+            <ThemeProvider>
+                <StyledPage>
+                    <Inner>
+                        <Meta />
+                        <Header />
+                        {this.props.children}
+                    </Inner>
+                </StyledPage>
+            </ThemeProvider>
         );
     }
 }
