@@ -28,7 +28,29 @@ const Inner = styled.div`
     margin: 0 auto;
     padding: 2rem;
 `;
+injectGlobal`
+    @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
 
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    *, *:before *:after {
+        box-sizing: inherit;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: 'Fira Sans', sans-serif,;
+    }
+    A {
+        text-decoration: none;
+        color: ${theme.black};
+    }
+
+`;
 class Page extends Component {
     render() {
         return (
