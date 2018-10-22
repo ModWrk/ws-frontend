@@ -6,9 +6,6 @@ const Meta = () => (
     <meta charSet="utf-8" />
     <link rel="shortcut icon" href="/static/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
-
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,800" rel="stylesheet"></link>
-
     <title>Mod~Wrk</title>
   </Head>
 );

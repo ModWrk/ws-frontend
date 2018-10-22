@@ -29,8 +29,20 @@ const Inner = styled.div`
     padding: 2rem;
 `;
 injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
-
+    @font-face {
+        font-family: 'fira-medium';
+        src: url('/static/FiraSans-Medium.ttf')
+        format('ttf');
+        font-weight: normal;
+        font-style:normal;
+    }
+    @font-face {
+        font-family: 'fira-bold';
+        src: url('/static/FiraSans-Bold.ttf')
+        format('ttf');
+        font-weight: normal;
+        font-style:normal;
+    }
     html {
         box-sizing: border-box;
         font-size: 16px;
@@ -43,9 +55,9 @@ injectGlobal`
         margin: 0;
         font-size: 1rem;
         line-height: 1.5rem;
-        font-family: 'Fira Sans', sans-serif,;
+        font-family: 'fira-medium',sans-serif;
     }
-    A {
+    a {
         text-decoration: none;
         color: ${theme.black};
     }
