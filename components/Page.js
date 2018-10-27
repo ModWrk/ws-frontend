@@ -66,7 +66,7 @@ injectGlobal`
 class Page extends Component {
     render() {
         return (
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme = { theme }>
                 <StyledPage>
                     <Inner>
                         <Meta />
