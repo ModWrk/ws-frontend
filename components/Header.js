@@ -33,9 +33,28 @@ const Logo = styled.h1`
     }
 `;
 
+const StyledHeader = styled.div`
+    .bar {
+        border-bottom: 10px solid ${props => props.theme.black};
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: space-between;
+        align-items: stretch;
+        @media screen (max-width: 1300px) {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+    }
+    .sub-bar {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        border-bottom: 10px solid ${props => props.theme};
+    }
+`;
+
 
 const Header = () => (
-    <div>   
+    <StyledHeader>   
         <div className="bar">
             <Logo>
                 <Link href="/">
@@ -48,7 +67,7 @@ const Header = () => (
             <p>Search</p>
         </div>
         <div>Cart</div>
-    </div>
+    </StyledHeader>
 );
 
 export default Header;
