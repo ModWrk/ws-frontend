@@ -30,19 +30,27 @@ const Inner = styled.div`
 `;
 injectGlobal`
     @font-face {
-        font-family: 'fira-medium';
-        src: url('/static/FiraSans-Medium.ttf')
+        font-family: 'Volkhov';
+        src: url('/static/Volkhov-Regular.ttf')
         format('ttf');
         font-weight: normal;
         font-style:normal;
     }
     @font-face {
-        font-family: 'fira-bold';
+        font-family: 'Volkhov-Bold';
         src: url('/static/FiraSans-Bold.ttf')
         format('ttf');
-        font-weight: normal;
-        font-style:normal;
+        font-weight: bold;
+        font-style: normal;
     }
+    @font-face {
+        font-family: 'Yesteryear';
+        src: url('/static/Yesteryear.ttf')
+        format('ttf');
+        font-weight: bold;
+        font-style: normal;
+    }
+
     html {
         box-sizing: border-box;
         font-size: 16px;
@@ -55,7 +63,7 @@ injectGlobal`
         margin: 0;
         font-size: 1rem;
         line-height: 1.5rem;
-        font-family: 'fira-medium',sans-serif;
+        font-family: 'Volkhov',serif;
     }
     a {
         text-decoration: none;
