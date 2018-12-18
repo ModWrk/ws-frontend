@@ -14,22 +14,22 @@ Router.onRouteChangeError = () => {
     NProgress.done();
 }
 
-const Logo = styled.h1`
-    font-size: 2rem;
+const Logo = styled.div`
     margin-left: 1rem;
     position: relative;
     z-index: 2;
-    transform: skew(-7deg);
-    a {
+    img {
+        height: 100px;
         padding: 0.5rem 1rem;
-        background: ${props => props.theme.drkBlue};
-        color: ${props => props.theme.green};
-        text-transform: uppercase;
+        color: ${props => props.theme.black};
         text-decoration: none;
     }
     @media (max-width: 1300px) {
         margin: 0;
         text-align: center;
+        img{
+            height: 5rem;
+        }
     }
 `;
 
@@ -40,7 +40,7 @@ const StyledHeader = styled.div`
         grid-template-columns: auto 1fr;
         justify-content: space-between;
         align-items: stretch;
-        @media screen (max-width: 1300px) {
+        @media (max-width: 1300px) {
             grid-template-columns: 1fr;
             justify-content: center;
         }
@@ -48,7 +48,7 @@ const StyledHeader = styled.div`
     .sub-bar {
         display: grid;
         grid-template-columns: auto 1fr;
-        border-bottom: 10px solid ${props => props.theme};
+        border-bottom: 10px solid ${props => props.theme.greyMid};
     }
 `;
 
@@ -58,7 +58,7 @@ const Header = () => (
         <div className="bar">
             <Logo>
                 <Link href="/">
-                    <a>Mod Wrk</a>
+                    <img src="/static/screenKings.svg" alt="Screen Kings Logo"/>
                 </Link>
             </Logo>
             <Nav />

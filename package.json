@@ -1,7 +1,7 @@
 {
-  "name": "mod-wrk-frontend",
+  "name": "screenkings-frontend",
   "version": "1.0.0",
-  "description": "Work and words from a desert dwelling creative",
+  "description": "Affordable AF",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
@@ -32,6 +32,7 @@
     "react-adopt": "^0.6.0",
     "react-apollo": "^2.2.1",
     "react-dom": "^16.5.2",
+    "react-spring": "^7.1.3",
     "react-stripe-checkout": "^2.6.3",
     "react-transition-group": "^2.5.0",
     "styled-components": "^3.4.9",
