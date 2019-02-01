@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Item = styled.div`
   background: white;
-  border: 1px solid ${props => props.theme.offWhite};
+  border: 1px solid ${props => props.theme.greyMid};
   box-shadow: ${props => props.theme.bs};
   position: relative;
   display: flex;
@@ -11,6 +11,9 @@ const Item = styled.div`
     width: 100%;
     height: 400px;
     object-fit: cover;
+  }
+  a {
+    background: ${props => props.theme.secondary}
   }
   p {
     font-size: 12px;
@@ -26,7 +29,7 @@ const Item = styled.div`
     border-top: 1px solid ${props => props.theme.lightgrey};
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1px;
-    background: ${props => props.theme.lightgrey};
+    background: ${props => props.theme.greyLight};
     & > * {
       background: white;
       border: 0;
