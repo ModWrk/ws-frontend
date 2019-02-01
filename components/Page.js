@@ -18,7 +18,7 @@ const theme = {
     secondaryAccent: '',
     secondaryAccentMid: '',
     secondaryAccentLight: '',
-    maxWidth: '1000px',
+    maxWidth: '1200px',
     bs: '0 12px 24px 0 rgba(0, 0, 0, 0,.09)',
 };
 

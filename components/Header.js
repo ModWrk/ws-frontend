@@ -24,7 +24,7 @@ const Logo = styled.div`
         color: ${props => props.theme.black};
         text-decoration: none;
     }
-    @media (max-width: 1300px) {
+    @media (max-width: 1000px) {
         margin: 0;
         text-align: center;
         img{
@@ -35,12 +35,12 @@ const Logo = styled.div`
 
 const StyledHeader = styled.div`
     .bar {
-        border-bottom: 10px solid ${props => props.theme.black};
+        border-bottom: 10px solid ${props => props.theme.primary};
         display: grid;
         grid-template-columns: auto 1fr;
         justify-content: space-between;
         align-items: stretch;
-        @media (max-width: 1300px) {
+        @media (max-width: 1000px) {
             grid-template-columns: 1fr;
             justify-content: center;
         }

@@ -15,6 +15,7 @@ const NavStyles = styled.ul`
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1em;
+    color: ${props => props.theme.primary};
     background: none;
     border: 0;
     cursor: pointer;
@@ -53,7 +54,7 @@ const NavStyles = styled.ul`
       }
     }
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1200px) {
 
     margin: auto;
     border-top: 1px solid ${props => props.theme.lightgrey};
